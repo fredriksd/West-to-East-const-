@@ -62,7 +62,7 @@ def main():
     parser.add_argument("-reverse", help="\033[93mDO NOT USE, NOT FULLY IMPLEMENTED\033[0m Reverses the process, copying the .bak file to the original.",
                         action="store_true")
     parser.add_argument("-nobackup", help="Turns off the backup option, making no backup of edited file.",
-                        action="store_false")
+                        action="store_true", default=False)
 
     args = parser.parse_args()
 
